@@ -13,13 +13,17 @@
    racket-mode
    align-cljlet
    pretty-mode
+   clj-refactor
+   clojure-snippets
    ))
 
 (smartparens-global-strict-mode)
+(setq whitespace-action '(auto-cleanup))
+(global-whitespace-mode)
 
 (require 'align-cljlet)
 (require 'racket-mode)
-
+(require 'clj-refactor)
 (require 'auto-complete)
 (add-hook 'racket-mode-hook 'auto-complete-mode)
 
@@ -32,4 +36,9 @@
 (load "look-and-feel.el")
 (load "keyboard.el")
 
+(add-hook 'clojure-mode-hook
+          (lambda ()
+            (clj-refactor-mode 1)
+            ;; setup keybindings
+            (cljr-add-keybindings-with-prefix "C-c C-c")))
 
