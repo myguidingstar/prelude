@@ -36,6 +36,9 @@
 (load "look-and-feel.el")
 (load "keyboard.el")
 
+(eval-after-load "dash" '(dash-enable-font-lock))
+(require 'dash)
+
 (add-hook 'clojure-mode-hook
           (lambda ()
             (clj-refactor-mode 1)
