@@ -50,3 +50,12 @@
             ;; setup keybindings
             (cljr-add-keybindings-with-prefix "C-c C-f")))
 
+(require 'clojure-mode)
+(--map (put-clojure-indent it 'defun)
+       '(init-state render-state render will-mount did-mount
+                    will-update did-update display-name
+                    will-unmount
+                    should-update will-receive-props
+         div i img a p select option
+         table thead tbody tr th td
+         form input button))
