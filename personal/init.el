@@ -48,5 +48,5 @@
           (lambda ()
             (clj-refactor-mode 1)
             ;; setup keybindings
-            (cljr-add-keybindings-with-prefix "C-c C-c")))
+            (cljr-add-keybindings-with-prefix "C-c C-f")))
 
