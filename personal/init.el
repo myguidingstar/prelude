@@ -59,3 +59,6 @@
          div i img a p select option
          table thead tbody tr th td
          form input button))
+;; Show syntax highlighting per language native mode in *.org
+(setq org-src-fontify-natively t)
+
