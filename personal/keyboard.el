@@ -7,7 +7,8 @@
 (global-set-key (kbd "<f3>") 'name-last-kbd-macro)
 
 (global-set-key (kbd "<f5>") 'revert-buffer)
+(global-set-key (kbd "<f6>") 'org-babel-tangle)
 (global-set-key (kbd "<f7>") 'undo-tree-visualize)
+(global-set-key (kbd "<f8>") 'magit-status)
 
 (global-set-key "\M-Q" 'align-cljlet)
-
