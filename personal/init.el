@@ -17,7 +17,12 @@
    clojure-snippets
    ))
 
-(smartparens-global-strict-mode)
+;; (smartparens-global-strict-mode)
+(require 'clojure-mode-extra-font-locking)
+(add-hook 'clojure-mode-hook 'subword-mode)
+(add-hook 'clojure-mode-hook 'paredit-mode)
+(add-hook 'clojure-mode-hook 'rainbow-mode)
+
 (setq whitespace-action '(auto-cleanup))
 (global-whitespace-mode)
 
