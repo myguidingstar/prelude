@@ -6,8 +6,13 @@
 ;; M-x insert-kbd-macro
 (global-set-key (kbd "<f3>") 'name-last-kbd-macro)
 
-(global-set-key (kbd "<f5>") 'revert-buffer)
-(global-set-key (kbd "<f6>") 'org-babel-tangle)
+(global-set-key (kbd "S-<f5>") 'revert-buffer)
+(global-set-key (kbd "<f5>")
+                '(lambda () (interactive) (org-edit-src-code) (enlarge-window 15)))
+(global-set-key (kbd "<f6>")
+                '(lambda ()
+                   (interactive) (org-edit-src-exit)
+                   (org-babel-tangle) (enlarge-window 15)))
 (global-set-key (kbd "S-<f6>") 'org-export-as-html)
 (global-set-key (kbd "<f7>") 'undo-tree-visualize)
 (global-set-key (kbd "<f8>") 'magit-status)
