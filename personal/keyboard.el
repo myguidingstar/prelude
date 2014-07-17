@@ -14,6 +14,7 @@
                    (interactive) (org-edit-src-exit)
                    (org-babel-tangle) (enlarge-window 15)))
 (global-set-key (kbd "S-<f6>") 'org-export-as-html)
+(global-set-key (kbd "C-<f6>") 'org-babel-tangle)
 (global-set-key (kbd "<f7>") 'undo-tree-visualize)
 (global-set-key (kbd "<f8>") 'magit-status)
 (global-set-key (kbd "S-<f8>") 'magit-blame-mode)
