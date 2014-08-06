@@ -16,7 +16,13 @@
 (global-set-key (kbd "S-<f6>") 'org-export-as-html)
 (global-set-key (kbd "C-<f6>") 'org-babel-tangle)
 (global-set-key (kbd "<f7>") 'undo-tree-visualize)
+(global-set-key (kbd "C-<f7>")
+                '(lambda () (interactive)
+                   (let ((current-prefix-arg 1)) ;; emulate C-u
+                     (call-interactively 'cider-eval-last-sexp) ;; invoke align-regexp interactively
+                     )))
 (global-set-key (kbd "<f8>") 'magit-status)
+(global-set-key (kbd "C-<f8>") 'clojure-jump-between-tests-and-code)
 (global-set-key (kbd "S-<f8>") 'magit-blame-mode)
 (global-set-key (kbd "<f10>") '(lambda () (interactive) (enlarge-window 15)))
 (global-set-key "\M-Q" 'align-cljlet)
