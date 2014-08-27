@@ -15,7 +15,12 @@
    pretty-mode
    clj-refactor
    clojure-snippets
+   sublime-themes
    ))
+
+;; load a theme from sublime-themes
+;; https://github.com/owainlewis/emacs-color-themes
+;; (load-theme 'hickey t)
 
 ;; (smartparens-global-strict-mode)
 (require 'clojure-mode-extra-font-locking)
