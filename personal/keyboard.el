@@ -22,7 +22,8 @@
                      (call-interactively 'cider-eval-last-sexp) ;; invoke align-regexp interactively
                      )))
 (global-set-key (kbd "<f8>") 'magit-status)
-(global-set-key (kbd "C-<f8>") 'clojure-jump-between-tests-and-code)
+(global-set-key (kbd "C-<f8>") 'cider-eval-print-last-sexp)
+(global-set-key (kbd "C-<f5>") 'cider-eval-buffer)
 (global-set-key (kbd "S-<f8>") 'magit-blame-mode)
 (global-set-key (kbd "<f10>") '(lambda () (interactive) (enlarge-window 15)))
 (global-set-key "\M-Q" 'align-cljlet)
