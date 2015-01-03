@@ -10,6 +10,7 @@
  '(auto-complete
    git-gutter
    htmlize
+   geiser
    racket-mode
    align-cljlet
    pretty-mode
