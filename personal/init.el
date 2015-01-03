@@ -1,4 +1,4 @@
-
+(load-theme prelude-theme t)
 ;; Starts server to connect with emacs-client
 (server-start)
 ;; No backup file, please
@@ -16,6 +16,7 @@
    clj-refactor
    clojure-snippets
    sublime-themes
+   clojure-mode-extra-font-locking
    ))
 
 ;; load a theme from sublime-themes
@@ -66,4 +67,3 @@
          form input button))
 ;; Show syntax highlighting per language native mode in *.org
 (setq org-src-fontify-natively t)
-
