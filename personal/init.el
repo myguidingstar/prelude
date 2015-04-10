@@ -6,7 +6,7 @@
 ;; add personal dir to load path
 (add-to-list 'load-path "~/.emacs.d/personal/")
 ;; Packages I use
-(prelude-ensure-module-deps
+(prelude-require-packages
  '(auto-complete
    git-gutter
    htmlize
