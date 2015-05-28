@@ -19,6 +19,10 @@
          table thead tbody tr th td
          form input button))
 
+(--map (put-clojure-indent it 'defun)
+       '(-> ->>
+         do))
+
 (add-hook 'cider-mode-hook #'eldoc-mode)
 (setq nrepl-hide-special-buffers t)
 (setq cider-repl-tab-command #'indent-for-tab-command)
