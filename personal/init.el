@@ -18,7 +18,7 @@
    clojure-snippets
    sublime-themes
    clojure-mode-extra-font-locking
-   ))
+   j-mode))
 
 ;; load a theme from sublime-themes
 ;; https://github.com/owainlewis/emacs-color-themes
