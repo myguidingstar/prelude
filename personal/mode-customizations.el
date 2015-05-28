@@ -38,3 +38,13 @@
 (add-hook 'racket-mode-hook 'paredit-mode)
 (add-hook 'racket-mode-hook 'rainbow-mode)
 (add-hook 'racket-mode-hook 'auto-complete-mode)
+
+(add-hook 'emacs-lisp-mode-hook 'paredit-mode)
+
+(require 'j-mode)
+(add-to-list 'auto-mode-alist '("\\.ij[rstp]$" . j-mode))
+(custom-set-faces
+ '(j-verb-face ((t (:foreground "Red"))))
+ '(j-adverb-face ((t (:foreground "Green"))))
+ '(j-conjunction-face ((t (:foreground "Blue"))))
+ '(j-other-face ((t (:foreground "Black")))))

@@ -18,17 +18,21 @@
    clojure-snippets
    sublime-themes
    clojure-mode-extra-font-locking
+   inf-clojure
    j-mode))
 
 ;; load a theme from sublime-themes
 ;; https://github.com/owainlewis/emacs-color-themes
-;; (load-theme 'hickey t)
-
+;; (load-theme 'spolsky t)
+;; (load-theme 'granger t)
+(enable-theme 'zenburn)
+(setq prelude-theme 'solarized-dark)
 ;; (smartparens-global-strict-mode)
 (setq whitespace-action '(auto-cleanup))
 (global-whitespace-mode)
 
 (require 'align-cljlet)
+
 (require 'auto-complete)
 
 (require 'git-gutter)
