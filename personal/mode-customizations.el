@@ -9,14 +9,15 @@
 (add-to-list 'auto-mode-alist '("\\.boot\\'" . clojure-mode))
 ;; (add-hook 'clojure-mode-hook #'inf-clojure-minor-mode)
 
+;; om's dom elements
 (--map (put-clojure-indent it 'defun)
-       '(init-state render-state render will-mount did-mount
-                    will-update did-update display-name
-                    will-unmount
-                    should-update will-receive-props
-                    div i img a p select option
-                    table thead tbody tr th td
-                    form input button))
+       '(init-state
+         render-state render will-mount did-mount
+         will-update did-update display-name
+         will-unmount should-update will-receive-props
+         div i img a p select option
+         table thead tbody tr th td
+         form input button))
 
 (add-hook 'cider-mode-hook #'eldoc-mode)
 (setq nrepl-hide-special-buffers t)
