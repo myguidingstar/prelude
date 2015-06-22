@@ -27,3 +27,4 @@
 (global-set-key (kbd "S-<f8>") 'magit-blame-mode)
 (global-set-key (kbd "<f10>") '(lambda () (interactive) (enlarge-window 15)))
 (global-set-key "\M-Q" 'align-cljlet)
+(global-set-key (kbd "C-x b") 'helm-buffers-list)
