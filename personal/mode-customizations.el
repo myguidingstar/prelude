@@ -26,6 +26,8 @@
 (add-hook 'cider-mode-hook #'eldoc-mode)
 (setq nrepl-hide-special-buffers t)
 (setq cider-repl-tab-command #'indent-for-tab-command)
+(setq cider-auto-select-error-buffer nil)
+(setq cider-prompt-save-file-on-load nil)
 
 (add-hook 'clojure-mode-hook
           (lambda ()
