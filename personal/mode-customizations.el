@@ -53,3 +53,24 @@
  '(j-adverb-face ((t (:foreground "Green"))))
  '(j-conjunction-face ((t (:foreground "Blue"))))
  '(j-other-face ((t (:foreground "Black")))))
+
+(require 'org)
+(require 'ob-clojure)
+(require 'cider)
+(setq org-babel-clojure-backend 'cider)
+
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '(
+   (sh . t)
+   (python . t)
+   (R . t)
+   (ruby . t)
+   (ditaa . t)
+   (dot . t)
+   (octave . t)
+   (sqlite . t)
+   (perl . t)
+   (clojure . t)
+   (scheme . t)
+   ))
