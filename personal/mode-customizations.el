@@ -21,7 +21,10 @@
 
 (--map (put-clojure-indent it 'defun)
        '(-> ->>
-         do))
+            do))
+
+(--map (put-clojure-indent it 'defun)
+       '(facts fact))
 
 (add-hook 'cider-mode-hook #'eldoc-mode)
 (setq nrepl-hide-special-buffers t)
