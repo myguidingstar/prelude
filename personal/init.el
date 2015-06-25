@@ -18,6 +18,7 @@
    clojure-snippets
    sublime-themes
    clojure-mode-extra-font-locking
+   browse-at-remote
    inf-clojure
    j-mode))
 
