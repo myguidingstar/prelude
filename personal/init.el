@@ -20,6 +20,9 @@
    clojure-mode-extra-font-locking
    browse-at-remote
    inf-clojure
+   ob-browser
+   google-translate
+   ob-translate
    j-mode))
 
 ;; load a theme from sublime-themes
