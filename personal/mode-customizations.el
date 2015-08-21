@@ -74,3 +74,6 @@
    (clojure . t)
    (scheme . t)
    ))
+
+;; Show syntax highlighting per language native mode in *.org
+(setq org-src-fontify-natively t)

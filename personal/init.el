@@ -51,6 +51,3 @@
 
 (eval-after-load "dash" '(dash-enable-font-lock))
 (require 'dash)
-
-;; Show syntax highlighting per language native mode in *.org
-(setq org-src-fontify-natively t)
