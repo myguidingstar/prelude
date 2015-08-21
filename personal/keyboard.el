@@ -28,6 +28,7 @@
 (global-set-key (kbd "<f10>") '(lambda () (interactive) (enlarge-window 15)))
 (global-set-key "\M-Q" 'align-cljlet)
 (global-set-key (kbd "C-x b") 'helm-buffers-list)
+(global-set-key (kbd "C-c p s G") 'helm-projectile-grep)
 
 (require 'browse-at-remote)
 (global-set-key (kbd "C-x t g") 'browse-at-remote/to-clipboard)
