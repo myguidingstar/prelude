@@ -83,3 +83,6 @@
 
 ;; Show syntax highlighting per language native mode in *.org
 (setq org-src-fontify-natively t)
+
+;; MakingScriptsExecutableOnSave
+(add-hook 'after-save-hook 'executable-make-buffer-file-executable-if-script-p)
