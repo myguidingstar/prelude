@@ -75,5 +75,11 @@
    (scheme . t)
    ))
 
+(setq org-confirm-babel-evaluate nil)
+(require 'ob-screen)
+(defvar org-babel-default-header-args:screen
+  '((:results . "silent") (:session . "default") (:cmd . "sh") (:terminal . "xterm"))
+  "Default arguments to use when running screen source blocks.")
+
 ;; Show syntax highlighting per language native mode in *.org
 (setq org-src-fontify-natively t)
