@@ -9,6 +9,11 @@
 (add-to-list 'auto-mode-alist '("\\.boot\\'" . clojure-mode))
 ;; (add-hook 'clojure-mode-hook #'inf-clojure-minor-mode)
 
+;; INDENT
+;; clojure core
+(--map (put-clojure-indent it 'defun)
+       '(-> ->>))
+
 ;; om's dom elements
 (--map (put-clojure-indent it 'defun)
        '(init-state
@@ -19,10 +24,11 @@
          table thead tbody tr th td
          form input button))
 
+;; garden-css
 (--map (put-clojure-indent it 'defun)
-       '(-> ->>
-            do))
+       '(at-media))
 
+;; midje
 (--map (put-clojure-indent it 'defun)
        '(facts fact))
 
